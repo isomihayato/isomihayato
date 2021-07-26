@@ -1,0 +1,13 @@
+.about__body_box{
+  width: 51vw;
+  margin:0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .about__body_box{
+    width: 100vw;
+  }
+  .about__body_box p {
+    padding: 30px;
+  }
+}
