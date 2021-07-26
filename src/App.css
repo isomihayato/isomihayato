@@ -43,6 +43,10 @@ html{
   font-style: normal;
   transform: translateY(-6px);
 }
+.section_title{
+  line-height: 0;
+  z-index: 1000;
+}
 .video_wrapper {
   position: relative;
   width: 50vw;
@@ -62,6 +66,8 @@ html{
 .video-js .vjs-play-progress {
   display: none;
 }
+
+
 
 .kv__title {
   font-size: 2.1875rem;
@@ -94,6 +100,36 @@ html{
   margin-top: 80px;
   height: 110vh;
 }
+
+
+.skill__box{
+  height: 90vh;
+}
+.skill__wrapper {
+  padding-top: 60px;
+  padding-left: 120px;
+}
+.skill__inner_box{
+  margin-left: 140px;
+}
+
+
+.contact__outer_box{
+  height: 91vh;
+  width: 99vw;
+  position: absolute;
+  z-index: -2;
+}
+.contact__title_section{
+  margin-left: 80px;
+  margin-top: 40vh;
+  transform: skewY(-10deg);
+}
+.constact__content {
+  padding-left: 10vw;
+  padding-top: 5vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -104,13 +140,18 @@ html{
 }
 @media screen and (max-width: 960px) {
   .subtitle {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .subtitle_wrapper {
-    font-family: 'bungee, sans-serif';
+    font-family: bungee, sans-serif;
     font-weight: 400;
     font-style: normal;
     transform: translateY(-6px);
+    margin-top: 4vh;
+  }
+  .section_title{
+    line-height: 0;
+    z-index: 1000;
   }
 
 
@@ -139,23 +180,58 @@ html{
     font-size: 1rem;
   }
   .video_wrapper {
-    margin-top: 20vh;
-    z-index: 10;
+    z-index: 1;
     position: absolute;
-    width: 60%;
-    height: 110vh;
+    width: 100%;
+    height: 100vh;
   }
 
   .portfolio__wrapper {
     z-index: 10;
-    width: 60%;
+    width: 100%;
+    margin-top: 41vh;
+    height: inherit;
   }
   .portfolio__card_wrapper {
     margin-top: 10vh;
   }
   .title_wrapper {
-    margin-left: 20px;
-    margin-top: 10vh;
-    height: 110vh;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+
+  .skill__sp_top {
+    margin-top: 118vh;
+  }
+  .skill__box{
+    height: 90vh;
+  }
+  .skill__wrapper {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .skill__inner_box{
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  
+  .contact__outer_box{
+    height: 91vh;
+    width: 100vw;
+    position: absolute;
+    margin-top: 90vh;
+    z-index: -2;
+  }
+  .contact__title_section{
+    margin-left: 0;
+    margin-top: 40vh;
+    transform: skewY(-10deg);
+  }
+  .constact__content {
+    padding-left: 10vw;
+    padding-top: 5vh;
+    font-size: 1rem;
   }
 }

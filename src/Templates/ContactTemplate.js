@@ -24,12 +24,7 @@ export default class ContactTemplate extends Component{
       <Fragment>
         <Box 
           bgcolor="orange" 
-          style={{
-              height:'91vh',
-              width: '99vw',
-              position:'absolute',
-              zIndex:-2
-            }}
+          className="contact__outer_box"
         >
             <Box 
             bgcolor="orange"
@@ -41,14 +36,13 @@ export default class ContactTemplate extends Component{
                 zIndex:-1
             }}
             >
-                <div style={{marginLeft:80,marginTop:'40vh',transform: 'skewY(-10deg)'}}>
+                <div className="contact__title_section">
                     <Typography variant="h2" style={{lineHeight: 0,zIndex:1000}}>
-                    連絡先
+                      連絡先
                     </Typography>
                     <SubTitle TitleContent="contact adress" mt="0px"/>
-                    <Typography variant="h4" style={{paddingLeft:'10vw',paddingTop:'5vh'}}>
+                    <Typography variant="h4" className="contact__content">
                       E-Mail：isomihayato@gmail.com
-
                     </Typography>
                 </div>
             </Box>

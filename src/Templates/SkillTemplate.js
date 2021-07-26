@@ -15,33 +15,34 @@ export default class PortfolioTemplate extends Component{
   render() {
     return (
       <div>
-        <Grid container>
-          <Grid item xs={1}>
+        <Grid container className="skill__sp_top">
+          <Grid item sm={1}>
           </Grid>
-          <Grid item xs={11}>
+          <Grid item sm={11}>
             <Box
                 bgcolor="#EFFCFF"
-                height="90vh"
+                className="skill__box"
             >
-            <div style={{paddingTop:60,paddingLeft:120}}>
+            <div className="skill__wrapper">
                 <Typography 
                   variant="h2" 
-                  style={{position:'absolute',lineHeight: 0,zIndex:1000}}
+                  className="section_title"
+                  style={{position:'absolute',transform: 'translateY(-40px)'}}
                 >
                 スキル
                 </Typography>
                 <SubTitle TitleContent="skill" mt="0px"/>
             </div>
-              <Box style={{marginLeft:140}}>
+              <Box className="skill__inner_box">
                 <Grid container>
-                  <Grid item xs={4}>
+                  <Grid item sm={4} xs={12}>
                     <AtriumPanel
                       url="images/icons/html.svg"
                       rate={3}
                       body="基本的なコーディングは問題ありません。BEMの使用経験もあります。"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item sm={4} xs={12}>
                     <AtriumPanel
                       url="images/icons/react.svg"
                       rate={2}
@@ -49,7 +50,7 @@ export default class PortfolioTemplate extends Component{
                       経験年数は１年ほどです。Reduxはあまり使ったことがなく、hookをよく使います。"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item sm={4} xs={12}>
                     <AtriumPanel
                       url="images/icons/typescript.svg"
                       rate={2}
@@ -61,7 +62,7 @@ export default class PortfolioTemplate extends Component{
                 </Grid>
 
                 <Grid container style={{margin:'20px 0'}}>
-                  <Grid item xs={4}>
+                  <Grid item sm={4} xs={12}>
                     <AtriumPanel
                       url="images/icons/laravel.svg"
                       rate={2}
@@ -70,14 +71,14 @@ export default class PortfolioTemplate extends Component{
                       をつけました。"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item sm={4} xs={12}>
                     <AtriumPanel
                       url="images/icons/aws.svg"
                       rate={3}
                       body="Webサイトに関するAWS上の基本的操作はできます。"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item sm={4} xs={12}>
                     <AtriumPanel
                       url="images/icons/rails.svg"
                       rate={4}

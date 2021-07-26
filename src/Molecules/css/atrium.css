@@ -1,0 +1,47 @@
+.atrium__outer_box{
+  width: 24vw;
+  height: 30vh;
+  display: inline-block;
+}
+.atrium__avatar {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+  background-color: white;
+}
+.atrium__img {
+  width: 80%;
+  height: 80%;
+}
+.atrium__rating {
+  margin-left: 32%;
+}
+.atrium__body{
+  margin: 20px 25px 0 25px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 960px) {
+  .atrium__outer_box{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .atrium__avatar {
+    margin: 0px auto;
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    background-color: white;
+  }
+  .atrium__img {
+    width: 80%;
+    height: 80%;
+  }
+  .atrium__rating {
+    margin-left: 32%;
+  }
+  .atrium__body{
+    margin: 20px 25px 0 25px;
+  }
+}

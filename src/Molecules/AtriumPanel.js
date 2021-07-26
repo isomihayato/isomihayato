@@ -5,7 +5,7 @@ import {
     Typography
 } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
-
+import './css/atrium.css';
 
 
 export default class AtriumPanel extends Component{
@@ -19,33 +19,24 @@ export default class AtriumPanel extends Component{
         <Box
           border={1}
           bgcolor='white'
-          style={{
-            width: '24vw',
-            height: '30vh',
-            display: 'inline-block',
-          }}
+          className="atrium__outer_box"
         >
           <Avatar
-          style={{
-            margin: '0 auto',
-            width: '80px',
-            height: '80px',
-            marginTop:'15px',
-            backgroundColor:'white'
-          }}
+            className="atrium__avatar"
+            style={{backgroundColor:'white',width:80,height:80}}
           >
-            <img src={this.props.url} style={{width:'80%',height:'80%'}}/>
+            <img src={this.props.url} className="atrium__img"/>
           </Avatar>
           <Rating 
             name="read-only" 
             value={this.props.rate} 
             readOnly
-            style={{marginLeft:'32%'}}
+            className="atrium__rating"
           />
           <Typography 
             variant="body1"
             gutterBottom 
-            style={{margin: '20px 25px 0 25px'}}
+            className="atrium__body"
            >
             {this.props.body}
           </Typography>
